@@ -115,29 +115,29 @@
 ![exploded_view](Images/exploded_view.png)
 
 ![esp32](Images/ESP32_schematic.png)
-    Resistor (R1) connected to GPIO8: This is a pull-up resistor connected to GPIO8. Pull-up resistors are used to ensure a pin has a defined high state when no external signal is applied.
-    GPIO8: This is a general-purpose input/output pin. It can be configured as either an input or an output.
-    IO/BOOT (Pin 15): This pin is used to put the ESP32-C6 into bootloader mode, which is necessary for flashing firmware.
-    NC (Pin 22): This stands for "No Connection." This pin is not connected to anything in this particular circuit.
-    EN (Pin 3): This is the Enable pin. Pulling this pin low resets the ESP32-C6.
-    INT_RTC (Pin 8): This is likely an interrupt pin related to the Real-Time Clock (RTC) functionality.
-    32KHz (Pin 9): This is probably the input for a 32.768 kHz crystal oscillator, which is used for the RTC.
-    MISO (Pin 27): This is the Master In Slave Out pin for the SPI (Serial Peripheral Interface) communication protocol.
-    EPD_BUSY (Pin 4): This pin is likely used to signal the busy state of an E-Paper Display (EPD).
-    SS_SD (Pin 5): This is the Slave Select pin for the SD card interface.
-    EPD_DC (Pin 6): This is the Data/Command pin for the EPD.
-    SCK (Pin 7): This is the Serial Clock pin for SPI communication.
-    MOSI (Pin 10): This is the Master Out Slave In pin for SPI communication.
-    3V3 (Pin 2): This is another 3.3V power supply pin.
-    IO10 to IO15 (Pins 11-14, 23): These are general-purpose input/output pins.
-    TXD0/GPIO16 (Pin 24): This is the transmit pin for UART0 (Universal Asynchronous Receiver/Transmitter) and also functions as GPIO16.
-    RXD0/GPIO17 (Pin 25): This is the receive pin for UART0 and also functions as GPIO17.
-    RX (Pin 16): This is likely another receive pin, possibly for a second UART.
-    RTC_RST (Pin 17): This is the reset pin for the RTC.
-    I2C_PW (Pin 12): This pin might be related to powering the I2C (Inter-Integrated Circuit) bus.
-    IO18 to IO23 (Pins 18-21): These are general-purpose input/output pins.
-    EPD_3V3_C (Pin 19): This is likely a 3.3V power supply pin specifically for the EPD.
-    SDA (Pin 20): This is the Serial Data pin for I2C communication.
-    SCL (Pin 21): This is the Serial Clock pin for I2C communication.
-    EPD_RST (Pin 21): This is the reset pin for the EPD.
-    1*11 (Pin 1): This indicates that pin 1 is connected to ground (GND).
+- Resistor (R1) connected to GPIO8: This is a pull-up resistor connected to GPIO8. Pull-up resistors are used to ensure a pin has a defined high state when no external signal is applied.
+- GPIO8: This is a general-purpose input/output pin. It can be configured as either an input or an output.
+- IO/BOOT (Pin 15): This pin is used to put the ESP32-C6 into bootloader mode, which is necessary for flashing firmware.
+- NC (Pin 22): This stands for "No Connection." This pin is not connected to anything in this particular circuit.
+- EN (Pin 3): This is the Enable pin. Pulling this pin low resets the ESP32-C6.
+- INT_RTC (Pin 8): This is likely an interrupt pin related to the Real-Time Clock (RTC) functionality.
+- 32KHz (Pin 9): This is probably the input for a 32.768 kHz crystal oscillator, which is used for the RTC.
+- MISO (Pin 27): This is the Master In Slave Out pin for the SPI (Serial Peripheral Interface) communication protocol.
+- EPD_BUSY (Pin 4): This pin is likely used to signal the busy state of an E-Paper Display (EPD).
+- SS_SD (Pin 5): This is the Slave Select pin for the SD card interface.
+- EPD_DC (Pin 6): This is the Data/Command pin for the EPD.
+- SCK (Pin 7): This is the Serial Clock pin for SPI communication.
+- MOSI (Pin 10): This is the Master Out Slave In pin for SPI communication.
+- 3V3 (Pin 2): This is another 3.3V power supply pin.
+- IO10 to IO15 (Pins 11-14, 23): These are general-purpose input/output pins.
+- TXD0/GPIO16 (Pin 24): This is the transmit pin for UART0 (Universal Asynchronous Receiver/Transmitter) and also functions as GPIO16.
+- RXD0/GPIO17 (Pin 25): This is the receive pin for UART0 and also functions as GPIO17.
+- RX (Pin 16): This is likely another receive pin, possibly for a second UART.
+- RTC_RST (Pin 17): This is the reset pin for the RTC.
+- I2C_PW (Pin 12): This pin might be related to powering the I2C (Inter-Integrated Circuit) bus.
+- IO18 to IO23 (Pins 18-21): These are general-purpose input/output pins.
+- EPD_3V3_C (Pin 19): This is likely a 3.3V power supply pin specifically for the EPD.
+- SDA (Pin 20): This is the Serial Data pin for I2C communication.
+- SCL (Pin 21): This is the Serial Clock pin for I2C communication.
+- EPD_RST (Pin 21): This is the reset pin for the EPD.
+- 1*11 (Pin 1): This indicates that pin 1 is connected to ground (GND).
