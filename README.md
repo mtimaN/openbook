@@ -2,8 +2,92 @@
 ![front_face](Images/front_face.png)
 ![pretty_pic](Images/view.png)
 
-## Block diagram
+## Overview
 ![block_diagram](Images/block_diagram.png)
+
+# 📚 eBook Reader – System Overview
+
+This project is an eBook reader based on the ESP32-C3 microcontroller. It features a 7.5" E-Ink display, SD card storage, environmental sensing, and a rechargeable LiPo battery, all optimized for low power consumption and readability.
+
+---
+
+## 🧠 Core Component
+
+### **ESP32-C3 WROOM**
+The main microcontroller that handles:
+- Display updates via **SPI**
+- File system and memory management
+- Button inputs through **GPIO**
+- Communication with sensors and RTC via **I2C**
+- USB communication for firmware updates or data transfer
+
+---
+
+## 📖 Display
+
+### **E-Ink DISPLAY 7.5" 800x400**
+- Ultra-low power display ideal for reading in bright light
+- Interface: SPI
+- Controlled by the ESP32 for rendering text and images
+
+---
+
+## 💾 Storage
+
+- **SD Card**: Stores eBooks and data files
+- **External NOR Flash**: Used for firmware, fonts, or static assets
+
+---
+
+## 🔋 Power Management
+
+- **USB-C**: Input for charging and potential USB data connection
+- **Battery Charger (MCP73831)**: Manages LiPo charging
+- **LiPo Battery**: Powers the system when unplugged
+- **Battery Level Monitor (MAX17048G+T10)**: Reports battery percentage to the ESP32
+- **3V3 LDO Regulator**: Provides stable 3.3V for the system
+
+---
+
+## 🌡️ Environmental Sensing
+
+### **BME688 Sensor**
+- Measures:
+  - Temperature
+  - Humidity
+  - Pressure
+  - Air quality
+- Data can be displayed or logged for contextual awareness
+
+---
+
+## 🕒 Real-Time Clock
+
+### **DS3231SN RTC Module**
+- Keeps track of time even when powered off
+- Useful for:
+  - Timestamps
+  - Scheduled wake-ups
+  - Time-based features
+
+---
+
+## ✅ Summary
+
+This eBook reader offers:
+- Crisp, low-power E-Ink display
+- Offline storage via SD card and flash
+- Rechargeable battery with power monitoring
+- Real-time clock and environment sensing
+- Simple, button-based navigation
+
+---
+
+> **Future Enhancements (Optional)**
+> - Wi-Fi/Bluetooth syncing
+> - Touch interface
+> - OTA (Over-the-Air) updates
+
 ## Bill of Materials (BOM) 
 |SAMACSYS_PARTS_USB4110GFA|Value                                                                         |Device                                                                        |Detailed Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |Link                                                                                                                         |
 |-------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
